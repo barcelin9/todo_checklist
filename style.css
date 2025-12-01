@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+.line {
+  width: 300px;
+  height: 2px;
+  background-color: #42445A;
+}
+
+.card-container {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-box {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+ul {
+  width: 530px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 5px 1px #4545454A;
+  border-radius: 20px;
+}
+
+li {
+  width: 510px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.tasks-title {
+  display: flex;
+  gap: 10px;
+  width: 400px;
+}
+
+button {
+  list-style: none;
+  color: #fff;
+  background-color: #DBBB00;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #0000005E;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.addTask {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.addTask input {
+  border: 1px solid #A2A2A2C9;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.addTask input:focus {
+  border: 1px solid #FF8200;
+}
+
+.addTask button {
+  background-color: #FF8200;
+}
+
+.details {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-card {
+  padding: 40px;
+  box-shadow: 0px 0px 5px 1px #4545454A;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details-card button {
+  width: 100px;
+}
+
+@media (max-width: 470px) {
+  
+  .card-box {
+    width: 320px;
+  }
+  
+  ul {
+    width: 330px;
+    padding: 30px;
+  }
+  
+  li {
+    width: 320px;
+  }
+}
